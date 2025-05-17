@@ -24,6 +24,7 @@
     --spacing-xl: 32px;
 }
 
+/* Main Elements */
 body {
     margin: 0;
     padding: 0;
@@ -54,7 +55,7 @@ button {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:hover:not(:disabled) {
+button:hover {
     background-color: var(--accent-color);
 }
 
@@ -63,6 +64,7 @@ button:disabled {
     cursor: not-allowed;
 }
 
+/* Classes */
 .box-2 {
     min-width: 280px;
     text-align: center;
@@ -75,16 +77,6 @@ button:disabled {
     margin-top: 0;
 }
 
-#wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1em;
-    background-color: var(--background-color);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
 .grid-box {
     display: flex;
@@ -121,12 +113,25 @@ button:disabled {
     gap: var(--spacing-sm);
 }
 
+/* ID's */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
     .flex-box {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .placeholder {
         font-size: 2rem;
     }
