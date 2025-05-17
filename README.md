@@ -32,8 +32,15 @@ A classic **Hangman game** built with **HTML**, **CSS**, and **JavaScript**. Try
 
 ```text
 hangman-game/
-│
-├── index.html        # Main HTML file
-├── style.css         # Styling (layout, colors, responsiveness)
-├── script.js         # Game logic (guess checking, UI updates)
-└── README.md         # Project description and info
+├── index.html            # Entry point of the game (HTML structure)
+├── README.md             # Project documentation and instructions
+├── .hintrc               # HTMLHint configuration file for code quality
+├── src/                  # All static assets (CSS, JS, fonts)
+│   ├── css/              # Stylesheets used by the project
+│   │   ├── normalize.css # CSS reset to ensure consistent styling across browsers
+│   │   └── style.css     # Main stylesheet for custom design
+│   ├── js/               # JavaScript logic
+│   │   └── script.js     # Handles game logic and user interactions
+│   └── fonts/            # Custom web fonts used in the game
+
+
