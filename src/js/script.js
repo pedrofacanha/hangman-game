@@ -225,7 +225,7 @@ function play(word){
 
             if (wrongGuess === maxAttempts) {
                 const res = word.join("");
-                alert(`The name of the movie is ${res}.\n GAME OVER!`);
+                alert(`The name of the movie was ${res}.\n GAME OVER!`);
                 window.location.reload();
             }
 
